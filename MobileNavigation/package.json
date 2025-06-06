@@ -1,0 +1,23 @@
+{
+  "name": "mobile-nav",
+  "version": "0.0.1",
+  "main": "index.js",
+  "scripts": {
+    "login": "vev login",
+    "init": "vev init",
+    "start": "vev start"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/react": "latest",
+    "@types/react-slick": "^0.23.13",
+    "prettier": "2.7.0",
+    "typescript-plugin-css-modules": "^5.0.1"
+  },
+  "dependencies": {
+    "@vev/react": "^0.2.0",
+    "react": "^18.2.0",
+    "react-slick": "^0.30.2",
+    "slick-carousel": "^1.8.1"
+  }
+}

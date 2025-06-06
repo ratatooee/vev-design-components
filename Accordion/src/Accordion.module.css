@@ -1,0 +1,133 @@
+.accordion_item {
+  width: 100%;
+  text-align: left;
+  padding: 20px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0 10px;
+  font-weight: 600;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  border-bottom: 1px solid transparent;
+  transition: all .4s ease-in-out;
+}
+
+.active {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.container {
+  width: 100%;
+}
+
+.wrapper {
+  border-bottom: 1px solid #000;
+  overflow: hidden;
+}
+
+.arrow {
+  color: #000;
+  font-size: 40px;
+  transition: all .4s ease-in-out;
+}
+
+.arrow_active {
+  rotate: 180deg;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+.icon_image {
+  max-height: 40px;
+}
+
+.title {
+  color: #000;
+  font-size: 20px;
+  margin: 0 auto 0 0;
+}
+
+.body {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  font-size: 20px;
+}
+
+.accordion_item_content {
+  transition: height .8s ease-in-out;
+  position: relative;
+
+}
+
+.accordion_item_content_inner {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.accordion_item_content.rows_1 .body {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.accordion_item_content.rows_1 .text,
+.accordion_item_content.rows_1 .image {
+  width: calc((100% / 2) - 10px);
+}
+
+.accordion_item_content.rows_2 .body {
+  display: flex;
+  flex-direction: column;
+  width: calc((100% / 2) - 10px);
+}
+
+.accordion_item_content.rows_3 .body {
+  display: flex;
+  flex-direction: column;
+  width: calc((100% / 3) - 14px);
+}
+
+.accordion_item_content.rows_4 .body {
+  display: flex;
+  flex-direction: column;
+  width: calc((100% / 4) - 15px);
+}
+
+.content_title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #000;
+  width: 100%;
+}
+
+.text {
+  font-size: 20px;
+  color: #000;
+  display: flex;
+  gap: 20px 0;
+  flex-direction: column;
+}
+
+.image {
+  display: block;
+}
+
+.content_image {
+  display: block;
+  width: 100%;
+  height: auto;
+}

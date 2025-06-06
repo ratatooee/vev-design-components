@@ -1,0 +1,31 @@
+.navItem {
+  display: inline-block;
+  padding: 4px 12px;
+  color: black;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  font-family: "Noto Sans";
+  cursor: pointer;
+}
+
+.navItem span {
+  padding-bottom: 2px;
+  text-transform: uppercase;
+}
+
+.navArrow {
+  color: black;
+}
+
+.highlight {
+  display: none;
+  margin-top: 0;
+  background: red;
+  height: 4px;
+  border-bottom: 0px !important;
+}
+
+.navItem.active .highlight {
+  display: block;
+}
